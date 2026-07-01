@@ -97,8 +97,5 @@ http://vinicius-static-site-lab.s3-website-us-east-1.amazonaws.com
 
 ## Prints
 
-_(adicionar aqui os screenshots: criação do bucket, upload, static hosting habilitado, bucket policy salva, site funcionando no navegador)_
-
 ---
 
-**Próximo lab:** Fase de Networking — VPC, Subnets e Security Groups.
