@@ -96,6 +96,8 @@ http://vinicius-static-site-lab.s3-website-us-east-1.amazonaws.com
 ```
 
 ## Prints
+<img width="1875" height="1007" alt="Screenshot_1" src="https://github.com/user-attachments/assets/5136735a-b21f-48ac-9939-e8c2907b550a" />
+
 
 ---
 
