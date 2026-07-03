@@ -76,16 +76,6 @@ O Amazon S3 é um serviço de armazenamento de objetos. Por padrão, todo bucket
 2. **Block Public Access** precisa estar desativado, pois é uma camada de segurança que impede qualquer configuração pública, mesmo que exista uma policy permitindo acesso.
 3. **Bucket Policy** precisa conceder explicitamente a permissão de leitura (`s3:GetObject`) para o público (`Principal: "*"`).
 
-Sem qualquer um desses três, o site não fica acessível — mesmo que os outros dois estejam corretos.
-
-## Observação importante: HTTP vs HTTPS
-
-O endpoint de Static Website Hosting do S3 (`*.s3-website-<região>.amazonaws.com`) **funciona apenas via HTTP**, sem certificado SSL/TLS nativo. Alguns navegadores e dispositivos forçam automaticamente o upgrade da URL para `https://`, o que resulta em falha de conexão — não por erro de configuração, mas porque esse protocolo não existe nesse tipo de endpoint.
-
-Solução aplicada: acessar a URL digitando explicitamente `http://` no início, sem permitir que o navegador force o redirecionamento para HTTPS.
-
-> Para servir o conteúdo via HTTPS, a abordagem correta seria colocar o Amazon CloudFront na frente do bucket S3 — tema de um lab futuro.
-
 ## Resultado
 
 Site estático acessível publicamente via:
