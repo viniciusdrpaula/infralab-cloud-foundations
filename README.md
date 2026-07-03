@@ -26,15 +26,13 @@ Endpoint de Website S3
   └── error.html
 ```
 
-O S3, quando configurado com Static Website Hosting, se comporta como um servidor web simples: recebe requisições HTTP e retorna os objetos armazenados diretamente, sem necessidade de infraestrutura de computação (EC2, containers, etc).
-
 ## Passo a passo executado
 
 ### 1. Criação do bucket
 Bucket criado com nome globalmente único: `vinicius-static-site-lab`, na região `us-east-1`.
 
 ### 2. Upload dos arquivos
-Upload do `index.html` (e `error.html`) para a raiz do bucket.
+Upload do `index.html` para a raiz do bucket.
 
 ### 3. Habilitação do Static Website Hosting
 Em **Properties → Static website hosting**, habilitado com:
